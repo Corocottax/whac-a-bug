@@ -52,12 +52,12 @@ const initGame = () => {
 const comprobar = () => {
   const cucarachas = document.querySelectorAll(".cucaracha");
 
-  if (PUNTUACION === 10) {
+  if (PUNTUACION === 50) {
     bomba$$.className = "estallar";
     bomba = true;
   }
 
-  if (PUNTUACION >= 10) {
+  if (PUNTUACION >= 50) {
     bomba$$.addEventListener("click", nuclear);
   }
 
